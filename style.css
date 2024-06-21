@@ -1,0 +1,149 @@
+* {
+    margin: 2px;
+    padding: 1px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #7abada;
+    color: azure;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: #5086b3;
+    color: aliceblue;
+    padding: 3px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 10px;
+}
+
+header nav ul li a {
+    color: azure;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    flex: 1;
+    padding: 5px;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    color: #376a94;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+.featured-articles,
+.recipes-list,
+.tips-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.featured-articles article,
+.recipes-list article,
+.tips-list article,
+.about-content {
+    background: rgb(124, 166, 214);
+    padding: 1rem;
+    border: 4px solid rgb(87, 99, 165);
+    border-radius: 15px;
+    width: calc(100% - 1rem);
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: rgb(124, 166, 214);
+    padding: 1rem;
+    border: 4px groove rgb(108, 145, 178);
+    border-radius: 10px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact-form label {
+    font-weight: bold;
+}
+
+.contact-form input [type="text"],
+.contact-form input [type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 4px solid #376a94
+}
+
+.contact-form button {
+    padding: 0.5rem;
+    background: #4a89c7;
+    color: white;
+    border: 3px solid #82aacb;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #376a94;
+}
+
+footer {
+    background: #5e5e5e;
+    color: white;
+    text-align: center;
+    padding: 2px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+
+@media (max-width:450px) {
+    body {
+        background-color: #4a89c7;
+    }
+}
+
+img {
+    border-radius: 50px 0 50px 0;
+}
+
+.ingredients {
+    background-color: rgb(124, 166, 214);
+    padding: 30px;
+    border-radius: 20px;
+    border: 4px solid rgb(201, 206, 238);
+    margin: 10px;
+}
+
+.recipe {
+    background-color: rgb(124, 166, 214);
+    padding: 30px;
+    border-radius: 20px;
+    border: 4px solid rgb(201, 206, 238);
+    margin: 10px;
+}
